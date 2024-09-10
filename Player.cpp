@@ -4,11 +4,19 @@
 
 class Player: public Entity
 {
+    private:
+        std::string m_Name;
     public:
-        const char* Name;
+        Player(const std::string& name)
+            : m_Name(name) {}
 
-        void PrintName()
+        Player()
         {
-            std::cout << Name << std::endl;
+            m_Name = "Player 1";
         }
+
+        std::string GetName() {
+            return m_Name;
+        }
+       
 };

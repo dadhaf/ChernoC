@@ -3,16 +3,16 @@
 
 int main()
 {
-    Player player;
 
-    player.X = 2;
-    player.Y = 3;
 
-    player.Move(2,2);
 
-    player.Name = "Player 1";
 
-    player.PrintName();
+    Entity* e = new Entity();
+    std::cout << e->GetName() << std::endl;
+    Player* p = new Player("Cherno");
+    std::cout << p->GetName() << std::endl;
 
+    Entity* entity = p;
+    std::cout << entity->GetName() << std::endl;
     
 }
