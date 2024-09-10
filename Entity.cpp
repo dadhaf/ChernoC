@@ -4,7 +4,7 @@ class Entity
 {
     public:
         float X,Y;
-        std::string GetName()
+        virtual std::string GetName()
         {
             return "Entity";
         }
