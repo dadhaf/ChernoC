@@ -5,8 +5,6 @@ int main()
 {
 
 
-
-
     Entity* e = new Entity();
     std::cout << e->GetName() << std::endl;
     Player* p = new Player("Cherno");

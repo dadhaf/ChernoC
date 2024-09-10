@@ -15,7 +15,7 @@ class Player: public Entity
             m_Name = "Player 1";
         }
 
-        std::string GetName() {
+        std::string GetName() override {
             return m_Name;
         }
        
