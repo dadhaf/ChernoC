@@ -1,4 +1,5 @@
 #include<string>
+#include<iostream>
 
 class Entity
 {
@@ -13,6 +14,13 @@ class Entity
         {
             X+=xa;
             Y+=ya;
+        }
+
+        int a,b;
+
+        void Print()
+        {
+            std::cout << a << ',' << b << std::endl;
         }
 };
 
